@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Remote API</title>
+</head>
+<body>
+
+   <h2>HELLO..!!</h2>
+   <script>
+      fetch('https://rawcdn.githack.com/kmitprojectschool/sem12022/788c820e40a750fecb30433c8d346457b7859abc/employee.json')
+     .then(res=>res.json())
+      .then(data=>showInfo(data))
+      function showInfo(data)
+      {
+      console.table(data.Employees)
+   
+      }
+      showInfo(data);
+   </script>
+   
+</body>
+</html>
